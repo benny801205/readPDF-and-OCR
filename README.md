@@ -1,4 +1,4 @@
-# readPDF and ORC
+# readPDF and OCR
  Extract content from pdf file by pyPdf and Optical Character Recognition
  
 ## Library
