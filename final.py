@@ -45,10 +45,10 @@ def ORC(url,i):
     img_1=Image.open("C:\\Users\\6601\\.spyder\\Mgroup\\tesseract\\" + i +'.jpg')
     a=pytesseract.image_to_string(img_1).split()
     b=str(a[-3])+' '+str(a[-2])+' '+str(a[-1])
-    c=filter(str.isalnum, b)
-    print c
+    output=filter(str.isalnum, b)
+    print output
     cv2.imwrite("C:\\Users\\6601\\.spyder\\Mgroup\\finial\\" + c +'.jpg',img[0:img.shape[0]/2,0:img.shape[1]])
-    return c
+    return output
 
 
 #########EXCEL prepare########################
